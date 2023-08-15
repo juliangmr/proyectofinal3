@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(5,179,104);
+    background: linear-gradient(90deg, rgba(5,179,104,1) 33%, rgba(124,199,225,1) 89%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* position: relative; */
+    
+}
+
+.container{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.4px);
+-webkit-backdrop-filter: blur(0.4px);
+border: 1px solid rgba(255, 255, 255, 0.29);
+width: 30%;
+text-align: center;
+}
+
+
+p{
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    color: white;
+    
+    /* right:20px; */
+}
+span{
+    position: absolute;
+    font-size: 100px;
+    transform: rotate(-30deg); 
+    color:white;
+}

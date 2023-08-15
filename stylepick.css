@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(199, 216, 43, 0.85) 1%, #81E878 100%, #960D7E 100%);
+}
+
+body h2{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+body p{
+    margin-top: 15px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    
+}
+
+
+.salida{
+    text-transform: uppercase; 
+    width: 30%;
+    height: 100px;
+    margin: 10px auto; 
+    border: 1px solid #000000 ; 
+    background: linear-gradient(90deg, rgba(97, 105, 56, 0.85) 1%, #81E878 100%, #960D7E 100%);
+
+
+   
+}
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+    
+}

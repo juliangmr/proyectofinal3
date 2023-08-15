@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Costo de Viaje</title>
+</head>
+<link rel="stylesheet" href="calculadora.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+<body>
+
+
+<div class="pagina1">
+    <h2>Calculadora de Costo de Viaje por Kilómetro</h2>
+    <div class="botonmenu">
+        
+        
+        <label for="Opciones">Escoge una opcion</label>
+        <select name="Opciones" id="OpcionesA-C">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+    </div>
+
+    <div class="calculo">
+        <form>
+            <label for="kilometros">Kilómetros recorridos:</label>
+            <input type="number" id="kilometros" name="kilometros" step="0.01" required>
+            <br><br>
+
+            <label for="costo">Selecciona el costo por kilómetro:</label>
+                <select id="costo" name="costo">
+                <option value="2">2$ por km</option>
+                <option value="2.5">2.5$ por km</option>
+                <option value="3">3$ por km</option>
+            </select>
+            <br><br>
+
+            <button type="button" onclick="calcularCosto()">Calcular Costo</button>
+        </form>
+
+        <p id="resultado"></p>
+    </div>
+    
+    <div class="funcion">
+        <script>
+            function calcularCosto() {
+                const kilometros = parseFloat(document.getElementById('kilometros').value);
+                const costoSeleccionado = parseFloat(document.getElementById('costo').value);
+                const costoTotal = kilometros * costoSeleccionado;
+
+                document.getElementById('resultado').textContent = `El costo total del viaje es: $${costoTotal.toFixed(2)}`;
+            }
+        </script>
+    </div>
+
+</div>
+
+</body>
+</html>

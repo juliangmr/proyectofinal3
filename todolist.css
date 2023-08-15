@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    height: 100vh;
+    background: rgb(5,134,179);
+    background: linear-gradient(90deg, rgba(5,134,179,1) 25%, rgba(124,202,225,1) 91%);  
+    justify-content: center;
+    display: flex ;
+    align-items: center;
+}
+.listadetareas{
+    background-color: white;
+    height: 50vh;
+    width: 40VW;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around; 
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+
+    
+}
+.listadetareas button{
+    border-radius: 20px;
+    height:25px;
+    color: green;
+    background-color: khaki;
+    
+
+    
+}
+.listadetareas button:hover{
+    color:chocolate;
+}
+.listadetareas input{
+    height: 25px;
+    border-color: #F0E68C ;
+}
